@@ -44,5 +44,20 @@ function queryBoolean($query) {
         exit();
     }
 }
+function MultiQueryBoolean($query) {
+    global $conn;
+    try {
+        $r = mysqli_multi_query($conn, $query);
+        return $r;
+    } catch (\Throwable $th) {
+        $result = [
+            'success' => false,
+            'data' => [],
+            'errors' => $th->getMessage(),
+        ];
+        echo json_encode($result);
+        exit();
+    }
+}
 
 ?>
