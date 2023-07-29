@@ -32,8 +32,8 @@ function queryArray($query) : array {
 function queryBoolean($query) {
     global $conn;
     try {
-        $r = mysqli_query($conn, $query);
-        return $r;
+        mysqli_query($conn, $query);
+        return mysqli_affected_rows($conn);
     } catch (\Throwable $th) {
         $result = [
             'success' => false,
@@ -47,8 +47,8 @@ function queryBoolean($query) {
 function MultiQueryBoolean($query) {
     global $conn;
     try {
-        $r = mysqli_multi_query($conn, $query);
-        return $r;
+        mysqli_multi_query($conn, $query);
+        return mysqli_affected_rows($conn);
     } catch (\Throwable $th) {
         $result = [
             'success' => false,
