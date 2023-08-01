@@ -7,6 +7,7 @@ $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
 $db_name = 'aplikasi_kasir';
+$api_key = "a773865cb9ad49e0adfb4bd1a0b9d76b";
 
 try {
     $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);

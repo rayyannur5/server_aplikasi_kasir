@@ -1,10 +1,9 @@
 <?php
 require_once ('../../init.php');
 
-
 $admin_id = htmlspecialchars($_GET['admin_id']);
 
-$data = queryArray("SELECT * FROM products WHERE admin_id = $admin_id AND active = 1");
+$data = queryArray("SELECT * FROM stores WHERE admin_id = $admin_id AND active = 1");
 
 if (count($data) != 0 ){
     
