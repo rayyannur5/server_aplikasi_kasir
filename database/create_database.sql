@@ -1,0 +1,1 @@
+CREATE DATABASE aplikasi_kasir;

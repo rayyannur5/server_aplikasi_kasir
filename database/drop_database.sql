@@ -1,0 +1,1 @@
+DROP DATABASE aplikasi_kasir;
