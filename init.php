@@ -20,8 +20,13 @@ function queryArray($query) : array {
     try {
         $r = mysqli_query($conn, $query);
     } catch (\Throwable $th) {
-        echo "<h1>QUERY ERROR</h1>";
-        throw $th;
+        $result = [
+            'success' => false,
+            'data' => [],
+            'errors' => $th->getMessage(),
+        ];
+        echo json_encode($result);
+        exit();
     }
     $rows = [];
 	while( $row = mysqli_fetch_assoc($r) ) {

@@ -7,37 +7,36 @@ $parameter = parse_url($actual_link);
 $parameter = explode('/', $parameter['path']);
 $id = end($parameter);
 
-$name = htmlspecialchars($_POST['name']);
-$icon = htmlspecialchars($_POST['icon']);
+
+$price = htmlspecialchars($_POST['price']);
 $updated_at = date('Y-m-d H:i:s');
 
+$data = queryArray("SELECT * FROM prices WHERE id = '$id'");
 
-$product = queryArray("SELECT * FROM products WHERE id = '$id'");
-
-
-if(count($product) != 0){
-    $data = queryBoolean("UPDATE `products` SET `name` = '$name', `icon` = '$icon', `updated_at` = '$updated_at' WHERE id = '$id'");
+if(count($data) != 0){
+    $r = queryBoolean("UPDATE `prices` SET `price` = '$price', `updated_at` = '$updated_at' WHERE id = '$id'");
     if($data){
-        $product = queryArray("SELECT * FROM products WHERE id = '$id'");
+        $data = queryArray("SELECT * FROM prices WHERE id = '$id'");
         $result = [
             'success' => true,
-            'data' => $product,
+            'data' => $data,
             'errors' => null,
         ];
     } else {
         $result = [
             'success' => false,
-            'data' => $product,
+            'data' => $data,
             'errors' => "Update failed",
         ];
     }
+
 } else {
     $result = [
         'success' => false,
-        'data' => $product,
+        'data' => $data,
         'errors' => "id not found",
     ];
 }
 
-
 echo json_encode($result);
+
