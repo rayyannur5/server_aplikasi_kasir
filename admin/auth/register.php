@@ -6,14 +6,15 @@ $name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
 $password = password_hash(htmlspecialchars($_POST['password']), PASSWORD_DEFAULT);
 $phone = htmlspecialchars($_POST['phone']);
-$receipt_phone = htmlspecialchars($_POST['receipt_phone']);
-$receipt_brand = htmlspecialchars($_POST['receipt_brand']);
-$receipt_message = htmlspecialchars($_POST['receipt_message']);
+$city = htmlspecialchars($_POST['city']);
+$receipt_phone = htmlspecialchars($_POST['phone']);
+$receipt_brand = 'NITROGEN';
+$receipt_message = 'SEMOGA SELAMAT SAMPAI TUJUAN';
 $profile_picture = htmlspecialchars($_POST['profile_picture']);
 $created_at = date('Y-m-d H:i:s');
 $updated_at = date('Y-m-d H:i:s');
 
-$result = queryBoolean("INSERT INTO `admins` VALUES (NULL ,'$name', '$email', '$password', '$phone', '$receipt_phone', '$receipt_brand', '$receipt_message', '$profile_picture', '$created_at', '$updated_at')");
+$result = queryBoolean("INSERT INTO `admins` VALUES (NULL ,'$name', '$email', '$password', '$phone', '$receipt_phone', '$receipt_brand', '$receipt_message', '$profile_picture', null, '$created_at', '$updated_at')");
 
 
 if($result){
@@ -37,6 +38,12 @@ if($result){
     "(NULL, $id, 'PAUSE MOBIL', 12, 0, 7, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
     "(NULL, $id, 'ERROR MOTOR', 13, 0, 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
     "(NULL, $id, 'ERROR MOBIL', 14, 0, 7, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');");
+
+    queryBoolean("INSERT INTO cities VALUES (NULL, $id, '$city', 1, '$created_at', '$updated_at')");
+
+    $city = queryArray("SELECT * FROM cities WHERE admin_id = $id AND LOWER(`name`) = LOWER('$city')")[0];
+
+    $data[0]['first_city_id'] = $city['id'];
 
     $result = [
         'success' => true,

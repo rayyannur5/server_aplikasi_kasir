@@ -1,2 +1,2 @@
 USE aplikasi_kasir;
-SELECT * FROM devices WHERE active = '1'
+SELECT * FROM devices

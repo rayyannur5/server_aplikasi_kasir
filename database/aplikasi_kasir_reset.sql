@@ -337,14 +337,16 @@ CREATE TABLE `admins` (
   `receipt_brand` varchar(255) NOT NULL,
   `receipt_message` varchar(255) NOT NULL,
   `profile_picture` varchar(255) NOT NULL,
+  `refferal` varchar(255) NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 
-INSERT INTO `admins` ( `id`, `name`, `email`, `password`, `phone`, `receipt_phone`, `receipt_brand`, `receipt_message`, `profile_picture`, `created_at`, `updated_at` ) VALUES
-(1, 'Administrator', 'admin@mail.com', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', '085215955155', '085215955155', 'NIROGEN OKE', 'Semoga selamat sampai tujuan', 'https://picsum.photos/200/300', '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+INSERT INTO `admins` ( `id`, `name`, `email`, `password`, `phone`, `receipt_phone`, `receipt_brand`, `receipt_message`, `profile_picture`,  `refferal`,  `created_at`, `updated_at` ) VALUES
+(1, 'Administrator', 'admin@mail.com', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', '085215955155', '085215955155', 'NIROGEN OKE', 'Semoga selamat sampai tujuan', 'https://picsum.photos/200/300', null, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+
 
 CREATE TABLE `pegawais` (
   `id` bigint(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -352,6 +354,7 @@ CREATE TABLE `pegawais` (
   `admin_id` bigint(20) UNSIGNED NOT NULL,
   `store_active_id` bigint(20) UNSIGNED NOT NULL,
   `shift_active` tinyint NOT NULL,
+  `active` tinyint NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `phone` varchar(15) NOT NULL,
@@ -364,15 +367,15 @@ CREATE TABLE `pegawais` (
 
 
 
-INSERT INTO `pegawais` ( `id`, `city_id`, `admin_id`, `store_active_id`, `shift_active`, `name`, `email`, `phone`, `password`, `profile_picture`, `created_at`, `updated_at` ) VALUES
-(1, 1, 1, 1, 1, 'Pegawai', 'user@mail.com', '085215955155', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', 'https://picsum.photos/200/300',  '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+INSERT INTO `pegawais` ( `id`, `city_id`, `admin_id`, `store_active_id`, `shift_active`, `active`, `name`, `email`, `phone`, `password`, `profile_picture`, `created_at`, `updated_at` ) VALUES
+(1, 1, 1, 1, 1, 1, 'Pegawai', 'user@mail.com', '085215955155', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', 'https://picsum.photos/200/300',  '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 ALTER TABLE `attendances`
 ADD KEY `attendances_pegawai_id_foreign` (`pegawai_id`),
 ADD KEY `attendances_store_id_foreign` (`store_id`),
 ADD KEY `attendances_created_at` (`created_at`),
-ADD CONSTRAINT `attendances_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawais` (`id`),
+ADD CONSTRAINT `attendances_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawais` (`id`) ON UPDATE CASCADE,
 ADD CONSTRAINT `attendances_store_id_foreign` FOREIGN KEY (`store_id`) REFERENCES `stores` (`id`);
 
 ALTER TABLE `cities`
