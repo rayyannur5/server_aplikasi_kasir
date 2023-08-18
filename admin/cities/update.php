@@ -8,15 +8,15 @@ $parameter = explode('/', $parameter['path']);
 $id = end($parameter);
 
 
-$price = htmlspecialchars($_POST['price']);
+$name = htmlspecialchars($_POST['name']);
 $updated_at = date('Y-m-d H:i:s');
 
-$data = queryArray("SELECT * FROM prices WHERE id = '$id'");
+$data = queryArray("SELECT * FROM cities WHERE id = '$id'");
 
 if(count($data) != 0){
-    $r = queryBoolean("UPDATE `prices` SET `price` = '$price', `updated_at` = '$updated_at' WHERE id = '$id'");
+    $r = queryBoolean("UPDATE `cities` SET `name` = '$name', `updated_at` = '$updated_at' WHERE id = '$id'");
     if($r){
-        $data = queryArray("SELECT * FROM prices WHERE id = '$id'");
+        $data = queryArray("SELECT * FROM cities WHERE id = '$id'");
         $result = [
             'success' => true,
             'data' => $data,
@@ -39,4 +39,3 @@ if(count($data) != 0){
 }
 
 echo json_encode($result);
-

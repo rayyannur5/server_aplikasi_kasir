@@ -11,6 +11,7 @@ $id = end($parameter);
 $name = htmlspecialchars($_POST['name']);
 $lat = htmlspecialchars($_POST['lat']);
 $lon = htmlspecialchars($_POST['lon']);
+$city_id = htmlspecialchars($_POST['city_id']);
 $updated_at = date('Y-m-d H:i:s');
 
 
@@ -21,7 +22,7 @@ if(count($store) != 0){
     $lokasi = json_decode($json, true);
     $addr = $lokasi['results'][0]['formatted'];
 
-    $data = queryBoolean("UPDATE stores SET `name` = '$name', lat = '$lat', lon = '$lon', addr = '$addr', updated_at = '$updated_at' WHERE id = '$id'");
+    $data = queryBoolean("UPDATE stores SET `name` = '$name', lat = '$lat', lon = '$lon', addr = '$addr', city_id = $city_id, updated_at = '$updated_at' WHERE id = '$id'");
     if($data){
         $store = queryArray("SELECT * FROM stores WHERE id = '$id'");
         $result = [
