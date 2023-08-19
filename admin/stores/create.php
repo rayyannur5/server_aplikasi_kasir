@@ -31,6 +31,11 @@ queryBoolean("UPDATE `devices` SET `active` = '0' WHERE `id` = '$device_id'");
 // GET STORE
 $store = queryArray("SELECT * FROM stores WHERE device_id = '$device_id'");
 
+
+// CREATE SHIFTS
+$store_id = $store[0]['id'];
+$shift = queryBoolean("INSERT INTO shifts VALUES(NULL, $store_id, '07:00:00', '12:00:00', '18:00:00', '$created_at', '$updated_at')");
+
 // CREATE PRICE
 $products = queryArray("SELECT id, device_product FROM products WHERE admin_id = '$admin_id' AND device_product <> 0");
 foreach ($products as $key => $product) {

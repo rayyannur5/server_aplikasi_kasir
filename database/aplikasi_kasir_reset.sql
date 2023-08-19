@@ -92,9 +92,9 @@ INSERT INTO `devices` ( `id`, `name`, `active`, `created_at`, `updated_at` ) VAL
 CREATE TABLE `shifts` (
   `id` bigint(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `store_id` bigint(20) UNSIGNED NOT NULL,
-  `time_s1` DATE NOT NULL,
-  `time_s2` DATE NOT NULL,
-  `time_s3` DATE NOT NULL,
+  `time_s1` TIME NOT NULL,
+  `time_s2` TIME NOT NULL,
+  `time_s3` TIME NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -449,8 +449,7 @@ ALTER TABLE `trollies`
 ADD KEY `trollies_price_id_foreign` (`price_id`),
 ADD KEY `trollies_trx_id_foreign` (`trx_id`),
 ADD KEY `trollies_created_at` (`created_at`),
-ADD CONSTRAINT `trollies_price_id_foreign` FOREIGN KEY (`price_id`) REFERENCES `prices` (`id`),
-ADD CONSTRAINT `trollies_trx_id_foreign` FOREIGN KEY (`trx_id`) REFERENCES `transactions` (`trx_id`);
+ADD CONSTRAINT `trollies_price_id_foreign` FOREIGN KEY (`price_id`) REFERENCES `prices` (`id`);
 
 
 ALTER TABLE `admins`
