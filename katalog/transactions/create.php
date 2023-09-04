@@ -33,14 +33,15 @@ if($pegawai['shift_active'] == 0) {
 }
 
 $trx_id = $data['trx_id'];
+$customer = $data['customer'];
 $store_id = $pegawai['store_active_id'];
 $shift = $pegawai['shift_active'];
 
 $paid = 0;
 
 foreach ($data['data'] as $key => $item) {
-    $price_id = $item['price_id'];
-    $qty = $item['qty'];
+    $price_id = $item['id'];
+    $qty = $item['count'];
 
     $price = queryArray("SELECT price FROM prices WHERE id = $price_id")[0];
     $paid_per_item = $qty * $price['price'];
@@ -51,7 +52,7 @@ foreach ($data['data'] as $key => $item) {
     $paid = $paid + $paid_per_item;
 }
 
-queryBoolean("INSERT INTO transactions VALUES (NULL, $pegawai_id, '$trx_id', $store_id, $shift, $paid, 0, 1, '$created_at', '$updated_at')");
+queryBoolean("INSERT INTO transactions VALUES (NULL, $pegawai_id, '$trx_id', $store_id, $shift, '$customer', $paid, 0, 1, '$created_at', '$updated_at')");
 
 $transaction = queryArray("SELECT * FROM transactions WHERE trx_id = '$trx_id'");
 

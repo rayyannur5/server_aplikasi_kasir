@@ -25,11 +25,12 @@ if (count($data) != 0 ){
         ];
     }
 } else {
-    $data = queryArray("SELECT * FROM pegawais WHERE email = '$email'");
+    $data = queryArray("SELECT pegawais.*, receipt_phone, receipt_brand, receipt_message FROM pegawais INNER JOIN admins ON admins.id = pegawais.admin_id WHERE pegawais.email = '$email'");
+    
     if(count($data) != 0){
         if(password_verify($password, $data[0]['password'])){
             unset($data[0]['password']);
-            $data[0]['role'] = 'pegawai';
+            $data[0]['role'] = 'user';
             $result = [
                 'success' => true,
                 'data' => $data,

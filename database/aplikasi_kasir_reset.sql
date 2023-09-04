@@ -10,6 +10,7 @@ CREATE TABLE `attendances` (
   `pegawai_id` bigint(20) UNSIGNED NOT NULL,
   `store_id` bigint(20) UNSIGNED NOT NULL,
   `shift` tinyint UNSIGNED NOT NULL,
+  `status` tinyint NOT NULL,
   `image_in` varchar(255) NOT NULL,
   `image_out` varchar(255) NOT NULL,
   `lat_in` double NOT NULL,
@@ -27,13 +28,13 @@ CREATE TABLE `attendances` (
 
 
 
-INSERT INTO `attendances` ( `id`, `pegawai_id`, `store_id`, `shift`, `image_in`, `image_out`, `lat_in`, `lat_out`, `lon_in`, `lon_out`, `addr_in`, `addr_out`, `range_in`, `range_out`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' );
+INSERT INTO `attendances` ( `id`, `pegawai_id`, `store_id`, `shift`, `status`, `image_in`, `image_out`, `lat_in`, `lat_out`, `lon_in`, `lon_out`, `addr_in`, `addr_out`, `range_in`, `range_out`, `active`, `created_at`, `updated_at` ) VALUES
+(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' );
 -- (NULL, 2, 2, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
 -- (NULL, 2, 2, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
 -- (NULL, 2, 2, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
@@ -215,7 +216,7 @@ INSERT INTO `prices` ( `id`, `admin_id`, `product_id`, `store_id`, `device_produ
 
 CREATE TABLE `reports` (
   `id` bigint(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `admin_id` bigint(20) UNSIGNED NOT NULL,
+  `pegawai_id` bigint(20) UNSIGNED NOT NULL,
   `report_category_id` tinyint UNSIGNED NOT NULL,
   `shift` tinyint NOT NULL,
   `description` longtext NOT NULL,
@@ -231,7 +232,7 @@ CREATE TABLE `reports` (
 
 
 
-INSERT INTO `reports` ( `id`, `admin_id`, `report_category_id`, `shift`, `description`, `image`, `lat`, `lon`, `addr`, `range`, `active`, `created_at`, `updated_at` ) VALUES
+INSERT INTO `reports` ( `id`, `pegawai_id`, `report_category_id`, `shift`, `description`, `image`, `lat`, `lon`, `addr`, `range`, `active`, `created_at`, `updated_at` ) VALUES
 (NULL, 1, 1, 1, 'Contoh deskripsi laporan tambahan', 'https://picsum.photos/200/300', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' );
 
 CREATE TABLE `report_category` (
@@ -293,6 +294,7 @@ CREATE TABLE `transactions` (
   `trx_id` VARCHAR(255) NOT NULL,
   `store_id` bigint(20) UNSIGNED NOT NULL,
   `shift` tinyint NOT NULL,
+  `customer` varchar(255) NULL,
   `paid` INT NOT NULL,
   `setor` tinyint(1) DEFAULT 1,
   `active` tinyint(1) DEFAULT 1,
@@ -301,11 +303,11 @@ CREATE TABLE `transactions` (
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
-INSERT INTO `transactions` ( `id`, `pegawai_id`, `trx_id`, `store_id`, `shift`, `paid`, `setor`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 'TRX1230434423234', 1, 1, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'trx9484570993423', 1, 1, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'TRX3453463335454', 1, 1, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'TRX2342352156452', 1, 1, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+INSERT INTO `transactions` ( `id`, `pegawai_id`, `trx_id`, `store_id`, `shift`, `customer`, `paid`, `setor`, `active`, `created_at`, `updated_at` ) VALUES
+(NULL, 1, 'TRX1230434423234', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+(NULL, 1, 'trx9484570993423', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+(NULL, 1, 'TRX3453463335454', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+(NULL, 1, 'TRX2342352156452', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 CREATE TABLE `trollies` (
@@ -354,6 +356,7 @@ CREATE TABLE `pegawais` (
   `admin_id` bigint(20) UNSIGNED NOT NULL,
   `store_active_id` bigint(20) UNSIGNED NOT NULL,
   `shift_active` tinyint NOT NULL,
+  `status_attendance` tinyint NOT NULL,
   `active` tinyint NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -367,8 +370,8 @@ CREATE TABLE `pegawais` (
 
 
 
-INSERT INTO `pegawais` ( `id`, `city_id`, `admin_id`, `store_active_id`, `shift_active`, `active`, `name`, `email`, `phone`, `password`, `profile_picture`, `created_at`, `updated_at` ) VALUES
-(1, 1, 1, 1, 1, 1, 'Pegawai', 'user@mail.com', '085215955155', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', 'https://picsum.photos/200/300',  '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+INSERT INTO `pegawais` ( `id`, `city_id`, `admin_id`, `store_active_id`, `shift_active`, `status_attendance`, `active`, `name`, `email`, `phone`, `password`, `profile_picture`, `created_at`, `updated_at` ) VALUES
+(1, 1, 1, 1, 1, 0, 1, 'Pegawai', 'user@mail.com', '085215955155', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', 'https://picsum.photos/200/300',  '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 ALTER TABLE `attendances`
@@ -406,10 +409,10 @@ ADD CONSTRAINT `prices_store_id_foreign` FOREIGN KEY (`store_id`) REFERENCES `st
 
 
 ALTER TABLE `reports`
-ADD KEY `reports_admin_id_foreign` (`admin_id`),
+ADD KEY `reports_pegawai_id_foreign` (`pegawai_id`),
 ADD KEY `reports_report_category_id_foreign` (`report_category_id`),
 ADD KEY `reports_created_at` (`created_at`),
-ADD CONSTRAINT `reports_admin_id_foreign` FOREIGN KEY (`admin_id`) REFERENCES `admins` (`id`),
+ADD CONSTRAINT `reports_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawais` (`id`),
 ADD CONSTRAINT `reports_report_category_id_foreign` FOREIGN KEY (`report_category_id`) REFERENCES `report_category` (`id`);
 
 
@@ -437,10 +440,8 @@ ADD CONSTRAINT `stores_city_id_foreign` FOREIGN KEY (`city_id`) REFERENCES `citi
 
 ALTER TABLE `transactions`
 ADD UNIQUE KEY `trx_id` (`trx_id`),
-ADD KEY `transactions_pegawai_id_foreign` (`pegawai_id`),
 ADD KEY `transactions_store_id_foreign` (`store_id`),
 ADD KEY `transactions_created_at` (`created_at`),
-ADD CONSTRAINT `transactions_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawais` (`id`),
 ADD CONSTRAINT `transactions_store_id_foreign` FOREIGN KEY (`store_id`) REFERENCES `stores` (`id`);
 
 
@@ -461,7 +462,5 @@ ADD KEY `pegawais_city_id_foreign` (`city_id`),
 ADD KEY `pegawais_admin_id_foreign` (`admin_id`),
 ADD CONSTRAINT `pegawais_admin_id_foreign` FOREIGN KEY (`admin_id`) REFERENCES `admins` (`id`),
 ADD CONSTRAINT `pegawais_city_id_foreign` FOREIGN KEY (`city_id`) REFERENCES `cities` (`id`);
-
-
 
 COMMIT;

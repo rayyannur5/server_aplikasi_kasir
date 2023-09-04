@@ -16,7 +16,7 @@ $admin = queryArray("SELECT * FROM admins WHERE refferal = '$refferal'")[0];
 if($admin != null){
     $city = queryArray("SELECT * FROM cities WHERE admin_id = {$admin['id']}")[0];
     
-    $query = queryBoolean("INSERT INTO pegawais VALUES (null, {$city['id']}, {$admin['id']}, 0, 0, 0, '$name', '$email', '$phone', '$password', '$profile_picture', '$created_at', '$updated_at' )");
+    $query = queryBoolean("INSERT INTO pegawais VALUES (null, {$city['id']}, {$admin['id']}, 0, 0, 0, 0, '$name', '$email', '$phone', '$password', '$profile_picture', '$created_at', '$updated_at' )");
     
     if($query){
         $pegawais = queryArray("SELECT * FROM pegawais WHERE email = '$email'");
