@@ -24,20 +24,20 @@ if($result){
     $id = $data[0]['id'];
     
     queryBoolean("INSERT INTO `products` ( `id`, `admin_id`, `name`, `device_product`, `category`, `icon`, `active`, `created_at`, `updated_at`) VALUES".
-    "(NULL, $id, 'TAMBAH ANGIN MOTOR', 1, 0, 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'TAMBAH ANGIN MOBIL', 2, 0, 7, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'ISI BARU MOTOR', 3, 0, 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'ISI BARU MOBIL', 4, 0, 7, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'TAMBAL BAN MOTOR', 5, 0, 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'TAMBAL BAN MOBIL', 6, 0, 7, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'PAS MOTOR', 7, 0, 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'PAS MOBIL', 8, 0, 7, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'KURANGI MOTOR', 9, 0, 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'KURANGI MOBIL', 10, 0, 7, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'PAUSE MOTOR', 11, 0, 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'PAUSE MOBIL', 12, 0, 7, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'ERROR MOTOR', 13, 0, 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),".
-    "(NULL, $id, 'ERROR MOBIL', 14, 0, 7, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');");
+    "(NULL, $id, 'TAMBAH ANGIN MOTOR', 1, 0, 4, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'TAMBAH ANGIN MOBIL', 2, 0, 7, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'ISI BARU MOTOR', 3, 0, 4, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'ISI BARU MOBIL', 4, 0, 7, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'TAMBAL BAN MOTOR', 5, 0, 4, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'TAMBAL BAN MOBIL', 6, 0, 7, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'PAS MOTOR', 7, 0, 4, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'PAS MOBIL', 8, 0, 7, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'KURANGI MOTOR', 9, 0, 4, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'KURANGI MOBIL', 10, 0, 7, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'PAUSE MOTOR', 11, 0, 4, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'PAUSE MOBIL', 12, 0, 7, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'ERROR MOTOR', 13, 0, 4, 1, '$created_at', '$updated_at'),".
+    "(NULL, $id, 'ERROR MOBIL', 14, 0, 7, 1, '$created_at', '$updated_at');");
 
     queryBoolean("INSERT INTO cities VALUES (NULL, $id, '$city', 1, '$created_at', '$updated_at')");
 

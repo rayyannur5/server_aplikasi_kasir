@@ -28,13 +28,13 @@ CREATE TABLE `attendances` (
 
 
 
-INSERT INTO `attendances` ( `id`, `pegawai_id`, `store_id`, `shift`, `status`, `image_in`, `image_out`, `lat_in`, `lat_out`, `lon_in`, `lon_out`, `addr_in`, `addr_out`, `range_in`, `range_out`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
-(NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' );
+-- INSERT INTO `attendances` ( `id`, `pegawai_id`, `store_id`, `shift`, `status`, `image_in`, `image_out`, `lat_in`, `lat_out`, `lon_in`, `lon_out`, `addr_in`, `addr_out`, `range_in`, `range_out`, `active`, `created_at`, `updated_at` ) VALUES
+-- (NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+-- (NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+-- (NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+-- (NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+-- (NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
+-- (NULL, 1, 1, 1, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' );
 -- (NULL, 2, 2, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
 -- (NULL, 2, 2, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
 -- (NULL, 2, 2, 1, 'picsum.photos/200/300', 'picsum.photos/200/300', -7.304827578360518, -7.304827578360518, 112.73050901179802,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 3, 4, 1, '2023-07-14 07:00:00', '2023-07-14 12:00:00' ),
@@ -62,10 +62,10 @@ CREATE TABLE `cities` (
 
 
 
-INSERT INTO `cities` ( `id`, `admin_id`, `name`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 'Surabaya', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'Gresik', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'Sidoarjo', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+-- INSERT INTO `cities` ( `id`, `admin_id`, `name`, `active`, `created_at`, `updated_at` ) VALUES
+-- (NULL, 1, 'Surabaya', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'Gresik', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'Sidoarjo', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 CREATE TABLE `devices` (
@@ -78,11 +78,11 @@ CREATE TABLE `devices` (
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `devices` ( `id`, `barcode`, `name`, `active`, `created_at`, `updated_at` ) VALUES
-( 'z_1001', 'DVC20230323234223', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-( 'z_1002', 'DVC20233432342421', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-( 'z_1003', 'DVC20234477955322', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-( 'z_1004', 'DVC20236594094434', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-( 'z_1005', 'DVC20235469504594', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1001', 'DVC20230323234223', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1002', 'DVC20233432342421', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1003', 'DVC20234477955322', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1004', 'DVC20236594094434', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1005', 'DVC20235469504594', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
 ( 'z_1006', 'DVC20234565945845', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
 ( 'z_1007', 'DVC20234556849343', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
 ( 'z_1008', 'DVC20235499802311', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
@@ -103,11 +103,11 @@ CREATE TABLE `shifts` (
 
 
 
-INSERT INTO `shifts` ( `id`, `store_id`, `time_s1`, `time_s2`, `time_s3`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, '07:00:00', '12:00:00', '18:00:00', '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 2, '07:00:00', '12:00:00', '18:00:00', '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 3, '07:00:00', '12:00:00', '18:00:00', '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 4, '07:00:00', '12:00:00', '18:00:00', '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+-- INSERT INTO `shifts` ( `id`, `store_id`, `time_s1`, `time_s2`, `time_s3`, `created_at`, `updated_at` ) VALUES
+-- (NULL, 1, '07:00:00', '12:00:00', '18:00:00', '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 2, '07:00:00', '12:00:00', '18:00:00', '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 3, '07:00:00', '12:00:00', '18:00:00', '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 4, '07:00:00', '12:00:00', '18:00:00', '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 CREATE TABLE `products` (
@@ -123,21 +123,21 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
-INSERT INTO `products` ( `id`, `admin_id`, `name`, `device_product`, `category`, `active`, `created_at`, `updated_at`) VALUES
-(NULL, 1, 'TAMBAH ANGIN MOTOR', 1, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'TAMBAH ANGIN MOBIL', 2, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'ISI BARU MOTOR', 3, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'ISI BARU MOBIL', 4, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'TAMBAL BAN MOTOR', 5, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'TAMBAL BAN MOBIL', 6, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'PAS MOTOR', 7, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'PAS MOBIL', 8, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'KURANGI MOTOR', 9, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'KURANGI MOBIL', 10, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'PAUSE MOTOR', 11, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'PAUSE MOBIL', 12, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'ERROR MOTOR', 13, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'ERROR MOBIL', 14, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+-- INSERT INTO `products` ( `id`, `admin_id`, `name`, `device_product`, `category`, `active`, `created_at`, `updated_at`) VALUES
+-- (NULL, 1, 'TAMBAH ANGIN MOTOR', 1, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'TAMBAH ANGIN MOBIL', 2, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'ISI BARU MOTOR', 3, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'ISI BARU MOBIL', 4, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'TAMBAL BAN MOTOR', 5, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'TAMBAL BAN MOBIL', 6, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'PAS MOTOR', 7, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'PAS MOBIL', 8, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'KURANGI MOTOR', 9, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'KURANGI MOBIL', 10, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'PAUSE MOTOR', 11, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'PAUSE MOBIL', 12, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'ERROR MOTOR', 13, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'ERROR MOBIL', 14, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 CREATE TABLE `prices` (
   `id` bigint(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -157,63 +157,63 @@ CREATE TABLE `prices` (
 
 
 
-INSERT INTO `prices` ( `id`, `admin_id`, `product_id`, `store_id`, `device_product`, `category`, `price`, `price_tambal`, `hidden`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 1, 1, 1, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 2, 1, 2, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 3, 1, 3, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 4, 1, 4, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 5, 1, 5, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 6, 1, 6, 0, 20000, 20000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 7, 1, 7, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 8, 1, 8, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 9, 1, 9, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 10, 1, 10, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 11, 1, 11, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 12, 1, 12, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 13, 1, 13, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 14, 1, 14, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 1, 2, 1, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 2, 2, 2, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 3, 2, 3, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 4, 2, 4, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 5, 2, 5, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 6, 2, 6, 0, 20000, 20000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 7, 2, 7, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 8, 2, 8, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 9, 2, 9, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 10, 2, 10, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 11, 2, 11, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 12, 2, 12, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 13, 2, 13, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 14, 2, 14, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 1, 3, 1, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 2, 3, 2, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 3, 3, 3, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 4, 3, 4, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 5, 3, 5, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 6, 3, 6, 0, 20000, 20000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 7, 3, 7, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 8, 3, 8, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 9, 3, 9, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 10, 3, 10, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 11, 3, 11, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 12, 3, 12, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 13, 3, 13, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 14, 3, 14, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 1, 4, 1, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 2, 4, 2, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 3, 4, 3, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 4, 4, 4, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 5, 4, 5, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 6, 4, 6, 0, 20000, 20000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 7, 4, 7, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 8, 4, 8, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 9, 4, 9, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 10, 4, 10, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 11, 4, 11, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 12, 4, 12, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 13, 4, 13, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 14, 4, 14, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+-- INSERT INTO `prices` ( `id`, `admin_id`, `product_id`, `store_id`, `device_product`, `category`, `price`, `price_tambal`, `hidden`, `active`, `created_at`, `updated_at` ) VALUES
+-- (NULL, 1, 1, 1, 1, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 2, 1, 2, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 3, 1, 3, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 4, 1, 4, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 5, 1, 5, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 6, 1, 6, 0, 20000, 20000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 7, 1, 7, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 8, 1, 8, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 9, 1, 9, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 10, 1, 10, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 11, 1, 11, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 12, 1, 12, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 13, 1, 13, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 14, 1, 14, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 1, 2, 1, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 2, 2, 2, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 3, 2, 3, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 4, 2, 4, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 5, 2, 5, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 6, 2, 6, 0, 20000, 20000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 7, 2, 7, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 8, 2, 8, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 9, 2, 9, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 10, 2, 10, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 11, 2, 11, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 12, 2, 12, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 13, 2, 13, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 14, 2, 14, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 1, 3, 1, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 2, 3, 2, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 3, 3, 3, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 4, 3, 4, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 5, 3, 5, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 6, 3, 6, 0, 20000, 20000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 7, 3, 7, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 8, 3, 8, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 9, 3, 9, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 10, 3, 10, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 11, 3, 11, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 12, 3, 12, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 13, 3, 13, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 14, 3, 14, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 1, 4, 1, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 2, 4, 2, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 3, 4, 3, 0, 5000, 5000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 4, 4, 4, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 5, 4, 5, 0, 10000, 10000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 6, 4, 6, 0, 20000, 20000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 7, 4, 7, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 8, 4, 8, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 9, 4, 9, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 10, 4, 10, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 11, 4, 11, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 12, 4, 12, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 13, 4, 13, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 14, 4, 14, 0, 3000, 3000, 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 CREATE TABLE `reports` (
   `id` bigint(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -233,8 +233,8 @@ CREATE TABLE `reports` (
 
 
 
-INSERT INTO `reports` ( `id`, `pegawai_id`, `report_category_id`, `shift`, `description`, `image`, `lat`, `lon`, `addr`, `range`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 1, 1, 'Contoh deskripsi laporan tambahan', 'https://picsum.photos/200/300', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' );
+-- INSERT INTO `reports` ( `id`, `pegawai_id`, `report_category_id`, `shift`, `description`, `image`, `lat`, `lon`, `addr`, `range`, `active`, `created_at`, `updated_at` ) VALUES
+-- (NULL, 1, 1, 1, 'Contoh deskripsi laporan tambahan', 'https://picsum.photos/200/300', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 4, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' );
 
 CREATE TABLE `report_category` (
   `id` tinyint UNSIGNED PRIMARY KEY NOT NULL,
@@ -260,9 +260,9 @@ CREATE TABLE `setorans` (
 )  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
-INSERT INTO `setorans` ( `id`, `admin_id`, `pegawai_id`,  `city_id`, `total_setor`, `periode_start`, `periode_end`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 1, 1, 1000000, '2023-07-01', '2023-07-02', '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 1, 1, 1000000, '2023-07-01', '2023-07-02', '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+-- INSERT INTO `setorans` ( `id`, `admin_id`, `pegawai_id`,  `city_id`, `total_setor`, `periode_start`, `periode_end`, `created_at`, `updated_at` ) VALUES
+-- (NULL, 1, 1, 1, 1000000, '2023-07-01', '2023-07-02', '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 1, 1, 1000000, '2023-07-01', '2023-07-02', '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 CREATE TABLE `stores` (
@@ -275,19 +275,20 @@ CREATE TABLE `stores` (
   `lat` double NOT NULL,
   `lon` double NOT NULL,
   `addr` longtext NOT NULL,
-  `device_status` tinyint(1) DEFAULT 0,
+  `omset_sn` INT DEFAULT 0,
+  `update_time` timestamp NULL DEFAULT NULL,
   `active` tinyint(1) DEFAULT 1,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
-INSERT INTO `stores` ( `id`, `admin_id`, `device_id`, `city_id`, `group`, `name`, `lat`, `lon`, `addr`, `device_status`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 'z_1001', 1, 0, 'Outlet Surabaya 1', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'z_1002', 1, 0, 'Outlet Surabaya 2', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'z_1003', 1, 0, 'Outlet Surabaya 3', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'z_1004', 1, 0, 'Outlet Surabaya 4', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'z_1005', 1, 0, 'Outlet Surabaya 5', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' );
+-- INSERT INTO `stores` ( `id`, `admin_id`, `device_id`, `city_id`, `group`, `name`, `lat`, `lon`, `addr`, `device_status`, `active`, `created_at`, `updated_at` ) VALUES
+-- (NULL, 1, 'z_1001', 1, 0, 'Outlet Surabaya 1', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+-- (NULL, 1, 'z_1002', 1, 0, 'Outlet Surabaya 2', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+-- (NULL, 1, 'z_1003', 1, 0, 'Outlet Surabaya 3', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+-- (NULL, 1, 'z_1004', 1, 0, 'Outlet Surabaya 4', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+-- (NULL, 1, 'z_1005', 1, 0, 'Outlet Surabaya 5', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' );
 
 CREATE TABLE `transactions` (
   `id` bigint(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -304,11 +305,11 @@ CREATE TABLE `transactions` (
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
-INSERT INTO `transactions` ( `id`, `pegawai_id`, `trx_id`, `store_id`, `shift`, `customer`, `paid`, `setor`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 'TRX1230434423234', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'trx9484570993423', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'TRX3453463335454', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-(NULL, 1, 'TRX2342352156452', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+-- INSERT INTO `transactions` ( `id`, `pegawai_id`, `trx_id`, `store_id`, `shift`, `customer`, `paid`, `setor`, `active`, `created_at`, `updated_at` ) VALUES
+-- (NULL, 1, 'TRX1230434423234', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'trx9484570993423', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'TRX3453463335454', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+-- (NULL, 1, 'TRX2342352156452', 1, 1, NULL, 3000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 CREATE TABLE `trollies` (
@@ -324,11 +325,11 @@ CREATE TABLE `trollies` (
 
 
 
-INSERT INTO `trollies` ( `id`, `price_id`, `trx_id`, `price`, `qty`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 'TRX1230434423234', 30000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'trx9484570993423', 30000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'TRX3453463335454', 30000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'TRX2342352156452', 30000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' );
+-- INSERT INTO `trollies` ( `id`, `price_id`, `trx_id`, `price`, `qty`, `active`, `created_at`, `updated_at` ) VALUES
+-- (NULL, 1, 'TRX1230434423234', 30000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+-- (NULL, 1, 'trx9484570993423', 30000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+-- (NULL, 1, 'TRX3453463335454', 30000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+-- (NULL, 1, 'TRX2342352156452', 30000, 1, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' );
 
 CREATE TABLE `admins` (
   `id` bigint(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -347,8 +348,8 @@ CREATE TABLE `admins` (
 
 
 
-INSERT INTO `admins` ( `id`, `name`, `email`, `password`, `phone`, `receipt_phone`, `receipt_brand`, `receipt_message`, `profile_picture`,  `refferal`,  `created_at`, `updated_at` ) VALUES
-(1, 'Administrator', 'admin@mail.com', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', '085215955155', '085215955155', 'NIROGEN OKE', 'Semoga selamat sampai tujuan', 'https://picsum.photos/200/300', null, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+-- INSERT INTO `admins` ( `id`, `name`, `email`, `password`, `phone`, `receipt_phone`, `receipt_brand`, `receipt_message`, `profile_picture`,  `refferal`,  `created_at`, `updated_at` ) VALUES
+-- (1, 'Administrator', 'admin@mail.com', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', '085215955155', '085215955155', 'NIROGEN OKE', 'Semoga selamat sampai tujuan', 'https://picsum.photos/200/300', null, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 CREATE TABLE `pegawais` (
@@ -371,8 +372,8 @@ CREATE TABLE `pegawais` (
 
 
 
-INSERT INTO `pegawais` ( `id`, `city_id`, `admin_id`, `store_active_id`, `shift_active`, `status_attendance`, `active`, `name`, `email`, `phone`, `password`, `profile_picture`, `created_at`, `updated_at` ) VALUES
-(1, 1, 1, 1, 1, 0, 1, 'Pegawai', 'user@mail.com', '085215955155', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', 'https://picsum.photos/200/300',  '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+-- INSERT INTO `pegawais` ( `id`, `city_id`, `admin_id`, `store_active_id`, `shift_active`, `status_attendance`, `active`, `name`, `email`, `phone`, `password`, `profile_picture`, `created_at`, `updated_at` ) VALUES
+-- (1, 1, 1, 1, 1, 0, 1, 'Pegawai', 'user@mail.com', '085215955155', '$2a$12$RzyQUL7zt.Clp6/T3F51JurjpZWmis/g77SRxVgFQygHiPJRTM5xC', 'https://picsum.photos/200/300',  '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 ALTER TABLE `attendances`

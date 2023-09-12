@@ -56,6 +56,8 @@ queryBoolean("CREATE TABLE `$device_id_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci; ");
 
 
+queryBoolean("ALTER TABLE `$device_id_table`
+ADD KEY `transactions_created_at` (`created_at`);");
 
 
 // GET STORE
