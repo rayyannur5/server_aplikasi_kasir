@@ -1,6 +1,6 @@
-DROP DATABASE aplikasi_kasir;
-CREATE DATABASE aplikasi_kasir;
-USE aplikasi_kasir;
+-- DROP DATABASE aplikasi_kasir;
+-- CREATE DATABASE aplikasi_kasir;
+-- USE aplikasi_kasir;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+07:00";
@@ -70,24 +70,25 @@ INSERT INTO `cities` ( `id`, `admin_id`, `name`, `active`, `created_at`, `update
 
 CREATE TABLE `devices` (
   `id` varchar(255) PRIMARY KEY NOT NULL,
+  `barcode` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `active` tinyint(1) DEFAULT 1,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `devices` ( `id`, `name`, `active`, `created_at`, `updated_at` ) VALUES
-('DVC20230323234223', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20233432342421', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20234477955322', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20236594094434', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20235469504594', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20234565945845', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20234556849343', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20235499802311', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20234345945333', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20235465945342', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
-('DVC20235434923234', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
+INSERT INTO `devices` ( `id`, `barcode`, `name`, `active`, `created_at`, `updated_at` ) VALUES
+( 'z_1001', 'DVC20230323234223', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1002', 'DVC20233432342421', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1003', 'DVC20234477955322', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1004', 'DVC20236594094434', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1005', 'DVC20235469504594', 'AI Device SPBU', 0, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1006', 'DVC20234565945845', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1007', 'DVC20234556849343', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1008', 'DVC20235499802311', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1009', 'DVC20234345945333', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1010', 'DVC20235465945342', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00'),
+( 'z_1011', 'DVC20235434923234', 'AI Device SPBU', 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00');
 
 
 CREATE TABLE `shifts` (
@@ -282,11 +283,11 @@ CREATE TABLE `stores` (
 
 
 INSERT INTO `stores` ( `id`, `admin_id`, `device_id`, `city_id`, `group`, `name`, `lat`, `lon`, `addr`, `device_status`, `active`, `created_at`, `updated_at` ) VALUES
-(NULL, 1, 'DVC20230323234223', 1, 0, 'Outlet Surabaya 1', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'DVC20233432342421', 1, 0, 'Outlet Surabaya 2', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'DVC20234477955322', 1, 0, 'Outlet Surabaya 3', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'DVC20236594094434', 1, 0, 'Outlet Surabaya 4', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
-(NULL, 1, 'DVC20235469504594', 1, 0, 'Outlet Surabaya 5', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' );
+(NULL, 1, 'z_1001', 1, 0, 'Outlet Surabaya 1', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+(NULL, 1, 'z_1002', 1, 0, 'Outlet Surabaya 2', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+(NULL, 1, 'z_1003', 1, 0, 'Outlet Surabaya 3', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+(NULL, 1, 'z_1004', 1, 0, 'Outlet Surabaya 4', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' ),
+(NULL, 1, 'z_1005', 1, 0, 'Outlet Surabaya 5', -7.304827578360518,  112.73050901179802, 'Jl. Gajah Mada I Dalam No.107, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242', 0, 1, '2023-07-14 07:00:00', '2023-07-14 07:00:00' );
 
 CREATE TABLE `transactions` (
   `id` bigint(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,

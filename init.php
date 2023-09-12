@@ -4,15 +4,19 @@ date_default_timezone_set("Asia/Jakarta");
 header('Content-Type: application/json');
 
 $db_host = 'localhost';
-$db_user = 'root';
-$db_pass = '';
-$db_name = 'aplikasi_kasir';
+$db_user = 'u431884832_rayyan';
+$db_pass = 'Rayyan@123';
+$db_name = 'u431884832_new';
 $api_key = "a773865cb9ad49e0adfb4bd1a0b9d76b";
+
+// $driver = new mysqli_driver();
+// $driver->report_mode = MYSQLI_REPORT_OFF;
 
 try {
     $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 } catch (\Throwable $th) {
-    throw $th;
+    echo $th;
+    exit();
 }
 
 function queryArray($query) : array {
@@ -65,5 +69,13 @@ function MultiQueryBoolean($query) {
         exit();
     }
 }
+
+
+// try {
+//     mysqli_query($conn, "CREATE TABLE de `$device_id`");
+// } catch (\Throwable $th) {
+//     //throw $th;
+//     echo $th;
+// }
 
 ?>

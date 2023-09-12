@@ -22,14 +22,44 @@ $json = file_get_contents("https://api.geoapify.com/v1/geocode/reverse?lat=$lat&
 $lokasi = json_decode($json, true);
 $addr = $lokasi['results'][0]['formatted'];
 
-// CREATE STORE
+// GET _DEVICE
+$device = queryArray("SELECT * FROM devices WHERE `barcode` = '$device_id' ")[0];
+$device_id_table = $device['id'];
 
-queryBoolean("INSERT INTO `stores` VALUES (NULL, '$admin_id', '$device_id', '$city_id', '$group', '$name', '$lat', '$lon', '$addr', 0, 1, '$created_at', '$updated_at' )");
-queryBoolean("UPDATE `devices` SET `active` = '0' WHERE `id` = '$device_id'");
+
+// CREATE STORE
+queryBoolean("INSERT INTO `stores` VALUES (NULL, '$admin_id', '$device_id_table', '$city_id', '$group', '$name', '$lat', '$lon', '$addr', 0, 1, '$created_at', '$updated_at' )");
+queryBoolean("UPDATE `devices` SET `active` = '0' WHERE `barcode` = '$device_id'");
+
+
+// CREATE TABLE
+queryBoolean("CREATE TABLE `$device_id_table` (
+`id` bigint(20) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`type_dt` tinyint UNSIGNED NOT NULL,
+`qty_dt` int DEFAULT 0,
+`device_product` int DEFAULT 0,
+`dt_1` int DEFAULT 0,
+`dt_2` int DEFAULT 0,
+`dt_3` int DEFAULT 0,
+`dt_4` int DEFAULT 0,
+`dt_5` int DEFAULT 0,
+`dt_6` int DEFAULT 0,
+`dt_7` int DEFAULT 0,
+`dt_8` int DEFAULT 0,
+`dt_9` int DEFAULT 0,
+`dt_10` int DEFAULT 0,
+`dt_11` int DEFAULT 0,
+`dt_12` int DEFAULT 0,
+`dt_13` int DEFAULT 0,
+`dt_14` int DEFAULT 0,
+`created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci; ");
+
+
 
 
 // GET STORE
-$store = queryArray("SELECT * FROM stores WHERE device_id = '$device_id'");
+$store = queryArray("SELECT * FROM stores WHERE device_id = '$device_id_table'");
 
 
 // CREATE SHIFTS

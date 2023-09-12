@@ -4,7 +4,7 @@ require_once ('../../init.php');
 
 $device_id = htmlspecialchars($_GET['device_id']);
 
-$data = queryArray("SELECT * FROM devices WHERE id = '$device_id'");
+$data = queryArray("SELECT * FROM devices WHERE barcode = '$device_id'");
 
 
 if (count($data) != 0 ){

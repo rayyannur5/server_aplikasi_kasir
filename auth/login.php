@@ -8,6 +8,8 @@ $password = htmlspecialchars($_POST['password']);
 
 $data = queryArray("SELECT * FROM admins WHERE email = '$email'");
 
+// var_dump($data);
+
 if (count($data) != 0 ){
     if(password_verify($password, $data[0]['password'])){
         unset($data[0]['password']);
